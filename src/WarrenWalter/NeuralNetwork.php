@@ -2,7 +2,7 @@
 /**
  *  \WarrenWalter\NeuralNetork 
  *  
- *  Abstract foundation class
+ *  Abstract foundation class for a neural network
  *  
  * @package WarrenWalter
  * @author Sven Schrodt<sven@schrodt-service.net>
@@ -17,6 +17,9 @@ namespace WarrenWalter;
 abstract class NeuralNetwork
 {
 
+    /**
+     * Defining nodes
+     */
     public function __construct()
     {
         
