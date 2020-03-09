@@ -13,7 +13,7 @@
  * @license https://github.com/svenschrodt/WarrenWalter/blob/master/LICENSE.md
  * @copyright Sven Schrodt<sven@schrodt-service.net>
  */
-namespace WarrenWalter;
+namespace WarrenWalter\Math;
 
 class Matrix
 {
@@ -29,18 +29,22 @@ class Matrix
      * Number of rows in current matrix
      * @var int
      */
-    protected  $rows;
+    protected  $rows = 0;
     
     /**
      * Number of columns in current matrix
      * @var int
      */
-    protected  $cols;
+    protected  $cols = 0;
     
-    
+    /**
+     * Constructor function 
+     * 
+     * @param array $matrix
+     */
     public function __construct(array $matrix) 
     {
-            
+       $this->matrix = $matrix;
         // Validate initial data of matrix
         $this->validateInput($matrix);
     }
@@ -52,6 +56,12 @@ class Matrix
      */
     protected function validateInput(array $matrix)
     {
+        $valid = true;
+        $reason = '';
         //@todo checking dimensions of matrix
+        print_r(count($matrix));       
+        if (!$valid) {
+            throw new \InvalidArgumentException('Invalid matrix input: ' . $reason);
+        }
     }
 }
