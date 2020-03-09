@@ -14,15 +14,12 @@
  */
 namespace WarrenWalter;
 
-class Math
+class NeuralNetwork
 {
     
     /**
      * Defining nodes
      */
-    public static function __construct()
-    {
-        
-    }
     
+    protected $nodes =  [];    
 }
