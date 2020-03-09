@@ -2,7 +2,7 @@
 /**
  *  \WarrenWalter\NeuralNetork
  *
- *  Abstract foundation class for a neural network
+ * Foundation class for an artificial neural network
  *
  * @package WarrenWalter
  * @author Sven Schrodt<sven@schrodt-service.net>
@@ -18,8 +18,33 @@ class NeuralNetwork
 {
     
     /**
-     * Defining nodes
+     * Defining Array holdig number of nodes
      */
     
     protected $nodes =  [];    
+    
+    /**
+     * Defining learning rate 
+     * @var float;
+     */
+    
+    protected $learningRate= 0.0;
+    
+    /**
+     * Constructor function initializing anns 
+     * 
+     * @param int $inputNodes - number 
+     * @param int $hiddeNodes
+     * @param int $outputNodes
+     * @param float $leaningRate
+     */
+    public function __construct(int $inputNodes, int $hiddeNodes, int $outputNodes, float $leaningRate)
+    {
+        $this->nodes['input'] = $inputNodes;
+        $this->nodes['hidden'] = $hiddeNodes;
+        $this->nodes['output'] = $outputNodes;
+        $this->learningRate = $leaningRate;
+    }
+    
+    
 }

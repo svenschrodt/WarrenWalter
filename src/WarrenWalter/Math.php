@@ -27,16 +27,16 @@ class Math
      */
     public function sigmoid(float $x) 
     {
-        // Euler constant from built-in exp function 
+        // Get value of Euler constant from built-in exp function 
         $e = exp(1);
         return 1 / (1 + pow($e, -1 * $x));
     }
     
 }
 
-$foo = new Math();
-for ($i=-6;$i<6.1;$i+=0.1) {
-    printf("x: %f  :: y: %f %s", $i, $foo->sigmoid($i),PHP_EOL);
+// $foo = new Math();
+// for ($i=-6;$i<6.1;$i+=0.1) {
+//     printf("x: %f  :: y: %f %s", $i, $foo->sigmoid($i),PHP_EOL);
     
     
-}
+// }
