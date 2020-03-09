@@ -35,12 +35,8 @@ class Matrix
      * Number of columns in current matrix
      * @var int
      */
-    protected  $columns;
+    protected  $cols;
     
-    /**
-     * @var float
-     */
-    protected  $determinant;
     
     public function __construct(array $matrix) 
     {
@@ -56,6 +52,6 @@ class Matrix
      */
     protected function validateInput(array $matrix)
     {
-        
+        //@todo checking dimensions of matrix
     }
 }
