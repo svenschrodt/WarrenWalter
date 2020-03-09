@@ -1,9 +1,9 @@
 <?php declare(strict_types = 1);
 /**
- *  \WarrenWalter\NeuralNetork 
- *  
+ *  \WarrenWalter\NeuralNetork
+ *
  *  Abstract foundation class for a neural network
- *  
+ *
  * @package WarrenWalter
  * @author Sven Schrodt<sven@schrodt-service.net>
  * @version 0.1
@@ -14,13 +14,13 @@
  */
 namespace WarrenWalter;
 
-abstract class NeuralNetwork
+class Math
 {
-
+    
     /**
      * Defining nodes
      */
-    public function __construct()
+    public static function __construct()
     {
         
     }
