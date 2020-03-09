@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 /**
- *  \WarrenWalter\Math 
+ *  \WarrenWalter\Math\Helper
  *  
  *  Class defininig mathematical functions for working with ann 
  *
@@ -13,9 +13,9 @@
  * @license https://github.com/svenschrodt/WarrenWalter/blob/master/LICENSE.md
  * @copyright Sven Schrodt<sven@schrodt-service.net>
  */
-namespace WarrenWalter;
+namespace WarrenWalter\Math;
 
-class Math 
+class Helper 
 {
 
 

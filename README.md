@@ -1,6 +1,6 @@
 # WarrenWalter
 
-Test lab for artificial neural networks (ann) 
+Test lab / palyground for artificial neural networks (ann) 
 
 Inspired by Tariq Rashid's book 'Make Your Own Neural Network' and other (online) resources
 

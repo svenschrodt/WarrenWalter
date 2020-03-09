@@ -19,8 +19,8 @@ class BasicTest extends \PHPUnit\Framework\TestCase
 
     public function testBasic()
     {
-        $foo = new \WarrenWalter\Math();
-        $this->assertInstanceOf('WarrenWalter\Math', $foo);
+        $foo = new \WarrenWalter\Math\Helper();
+        $this->assertInstanceOf('WarrenWalter\Math\Helper', $foo);
 
     }
 }
